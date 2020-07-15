@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+body{
+	background-color: purple;
+	color: white;
+	font-style:italic;
+	background-image: url('sample.jpg');
+ 	background-position: center;
+ 	 background-repeat: no-repeat;
+ 	 background-size: cover;
+
+}
+div.p{
+	text-align: center;
+	color: yellow;
+	font-size: 30px;
+	transform: translate(2%, 200%);
+}
+a{
+	color: red;
+}
+a:hover{
+	color: pink;
+}
+
+</style>
+</head>
+<body>
+	<title>MEGA CONSTRUCTIONS</title>
+
+	<h1>WELCOME TO ONLINE SITE SALES</h1>
+<div class="p">
+	<p1>This site is under construction</p1><br>
+	<p1>Feel free to chat with owner</p1>
+	<a target="_blank" href="whatsapp://send?abid=+919502709776">WhatsApp</a>&nbsp&nbsp
+	<a target="_blank" href="https://m.me/gondhiteja">Facebook</a>
+
+</div>
+
+</body>
+
+</html>
