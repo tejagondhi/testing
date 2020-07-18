@@ -1,19 +1,19 @@
 <html>
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{
-	background-color: purple;
+	background-color: white;
 	color: white;
 	font-style:italic;
-	background-image:url('sample.jpg');
+	background-image: url('sample1.jpg');
  	background-position: center;
- 	 background-repeat: no-repeat;
  	 background-size: cover;
 
 }
 div.p{
 	text-align: center;
-	color: yellow;
+	color: black;
 	font-size: 30px;
 	transform: translate(2%, 200%);
 }
@@ -23,20 +23,51 @@ a{
 a:hover{
 	color: pink;
 }
+ 
+h1{
+color: red;
+}
+div.autoslideshow{
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 </style>
 </head>
 <body>
 	<title>MEGA CONSTRUCTIONS</title>
 
-	<h1>WELCOME TO NEW WORLD</h1>
+	<h1><b>WELCOME TO NEW WORLD</b></h1>
+</head>
+<div class="autoslideshow" >
+  <img class="mySlides" src="image1.jpg" width= "100%" height = "90%" >
+  <img class="mySlides" src="image2.jpg" width= "100%" height = "90%">
+  <img class="mySlides" src="image3.jpg" width= "100%" height = "90%"><br>
+</div>
 <div class="p">
 	<p1>This site is under construction</p1><br>
 	<p1>Feel free to chat with owner</p1>
 	<a target="_blank" href=https://api.whatsapp.com/send?phone=+919502709776>WhatsApp</a>&nbsp&nbsp
 	<a target="_blank" href="https://m.me/gondhiteja">Facebook</a>
-
 </div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
 </body>
 
